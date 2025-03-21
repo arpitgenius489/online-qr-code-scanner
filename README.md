@@ -10,8 +10,8 @@ The **Online QR Code Scanner & Generator** is a lightweight, user-friendly tool 
 - **🖨️ QR Code Generation**: Create QR codes for any text or URL with ease.
 - **✏️ Edit & Open**: Modify scanned QR code content or open links directly in your browser.
 - **⌨️ Keyboard Shortcuts**:
-  - **Ctrl + S**: Start scanning a QR code.
-  - **Ctrl + G**: Generate a QR code.
+  - **Alt + S**: Start scanning a QR code (Windows only).
+  - **Alt + G**: Generate a QR code (Windows only).
 - **📦 Barcode Scanning**: *(Coming Soon)* Support for barcode scanning is under development.
 
 ---
@@ -20,7 +20,7 @@ The **Online QR Code Scanner & Generator** is a lightweight, user-friendly tool 
 
 1. Open the tool in **Google Chrome** on Android or Windows.
 2. Use the **🔍 Scan** button to scan QR codes or the **➕ Generate** button to create them.
-3. Enable keyboard shortcuts for faster actions.
+3. Enable keyboard shortcuts for faster actions (Windows only).
 
 ---
 
