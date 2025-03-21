@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Scanner</h1>
+        
+        <!-- Scan Button -->
+        <button id="scanBtn">Scan QR Code</button>
+        
+        <!-- Video Element for Camera -->
+        <video id="video" style="display: none;"></video>
+        
+        <!-- Canvas for QR Code Scanning -->
+        <canvas id="canvas" style="display: none;"></canvas>
+        
+        <!-- Output Section -->
+        <div id="output"></div>
+        
+        <!-- Edit and Generate Section -->
+        <div class="edit-section">
+            <textarea id="qrContent" placeholder="Scanned QR Code content will appear here..."></textarea>
+            <button id="generateBtn">Generate QR Code</button>
+            <div id="generatedQRCode"></div>
+        </div>
+        
+        <!-- Settings Section -->
+        <div class="settings">
+            <h3>Settings</h3>
+            <label>
+                <input type="checkbox" id="autoOpenLink">
+                Automatically open links after scanning
+            </label>
+            <label>
+                <input type="checkbox" id="enableShortcuts">
+                Enable keyboard shortcuts
+            </label>
+        </div>
+        
+        <!-- Shortcut Info -->
+        <div class="shortcut-info">
+            <p><strong>Keyboard Shortcuts:</strong></p>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to start scanning.</p>
+            <p>Press <kbd>Ctrl</kbd> + <kbd>G</kbd> to generate a QR Code.</p>
+        </div>
+    </div>
+</body>
+</html>
