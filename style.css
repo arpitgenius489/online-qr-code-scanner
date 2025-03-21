@@ -16,13 +16,9 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: var(--background-gradient);
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* Light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 /* Main Container */
@@ -39,11 +35,23 @@ body {
 }
 
 /* Header */
+header {
+    background-color: #24292e; /* GitHub dark theme */
+    color: white;
+}
+
 h1 {
     font-size: 24px;
     color: var(--text-color);
     margin-bottom: 20px;
     font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #24292e;
+    color: white;
+    font-size: 14px;
 }
 
 /* Buttons */
@@ -53,42 +61,62 @@ button {
     background: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Softer rounded corners */
     font-size: 16px;
+    font-weight: 600; /* Slightly bolder text for better readability */
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 button:hover {
     background: var(--primary-hover);
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset lift effect */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
+
+button:focus {
+    outline: 2px solid var(--primary-hover); /* Focus outline for accessibility */
+    outline-offset: 2px;
+}
+
+button:disabled {
+    background: #cccccc; /* Gray background for disabled state */
+    color: #666666; /* Muted text color */
+    cursor: not-allowed;
+    box-shadow: none; /* Remove shadow for disabled buttons */
+    transform: none; /* No lift effect for disabled buttons */
 }
 
 /* Input Field */
-input[type="text"] {
+input[type="text"], textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, background-color 0.3s;
 }
 
-input[type="text"]:focus {
+textarea[readonly] {
+    background-color: #f4f4f4; /* Light gray for read-only state */
+    cursor: not-allowed;
+}
+
+textarea:focus {
     border-color: var(--primary-color);
     outline: none;
 }
 
 /* Video Element */
 #video {
-    margin: 20px 0;
-    width: 100%;
-    max-height: 300px;
-    border: 2px solid var(--primary-color);
-    border-radius: 10px;
     transition: transform 0.3s;
-    border: 2px solid #007bff;
-    border-radius: 10px;
 }
 
 #video:hover {
@@ -97,29 +125,29 @@ input[type="text"]:focus {
 
 /* Canvas for QR Code */
 #canvas {
-    display: block;
-    margin: 20px auto;
-    border: 2px dashed #ccc;
-    border-radius: 10px;
-    max-width: 100%;
     animation: pulse 1.5s infinite;
-    border: 2px dashed #6c757d;
-    border-radius: 10px;
+}
+
+/* QR Content Section */
+#qrContent {
+    resize: none; /* Disable resizing for better layout control */
+}
+
+#editBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none; /* Hidden by default */
+}
+
+#editBtn.visible {
+    display: inline-block; /* Show when content is detected */
 }
 
 /* Output Box */
 #output {
-    margin-top: 20px;
-    padding: 10px;
-    background: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     word-break: break-word;
-    font-size: 14px;
-    color: var(--text-color);
     font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
-    word-break: break-word;
 }
 
 /* Edit Icon */
