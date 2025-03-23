@@ -16,11 +16,16 @@ const enableShortcuts = document.getElementById('enableShortcuts');
 let scanning = false;
 
 // Ensure all DOM elements are present
-if (!video || !scanBtn || !cameraSource || !qrContent || !canvas || !ctx) {
-    console.error('Required DOM elements are missing.');
-    alert('An error occurred while loading the application. Please try again.');
-    return;
+function checkDOMElements() {
+    if (!video || !scanBtn || !cameraSource || !qrContent || !canvas || !ctx) {
+        console.error('Required DOM elements are missing.');
+        alert('An error occurred while loading the application. Please try again.');
+        return; // This is now inside a function
+    }
 }
+
+// Call the function to check DOM elements
+checkDOMElements();
 
 // Event Listeners
 scanBtn.addEventListener('click', toggleScanning);
