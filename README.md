@@ -4,6 +4,8 @@ The **Online QR Code Scanner & Generator** is a lightweight, user-friendly tool 
 
 
 
+
+
 ## ✨ Features
 
 - **📷 QR Code Scanning**: Use your device's camera to scan QR codes and instantly view their content.
@@ -16,11 +18,15 @@ The **Online QR Code Scanner & Generator** is a lightweight, user-friendly tool 
 
 
 
+
+
 ## 🛠️ How It Works
 
 1. Open the tool in **Google Chrome** on Android or Windows.
 2. Use the **🔍 Scan** button to scan QR codes or the **➕ Generate** button to create them.
 3. Enable keyboard shortcuts for faster actions (Windows only).
+
+
 
 
 
@@ -33,9 +39,13 @@ The **Online QR Code Scanner & Generator** is a lightweight, user-friendly tool 
 
 
 
+
+
 ## ⚠️ Disclaimer
 
 This tool is provided "as-is" without any guarantees. While it is optimized for Google Chrome on Android and Windows, performance on other platforms may vary.
+
+
 
 
 
