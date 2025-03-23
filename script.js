@@ -15,6 +15,13 @@ const enableShortcuts = document.getElementById('enableShortcuts');
 
 let scanning = false;
 
+// Ensure all DOM elements are present
+if (!video || !scanBtn) {
+    console.error('Required DOM elements are missing.');
+    alert('An error occurred while loading the application. Please try again.');
+    return;
+}
+
 // Event Listeners
 scanBtn.addEventListener('click', toggleScanning);
 uploadBtn.addEventListener('click', () => fileInput.click());
@@ -207,6 +214,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Insert Pricing Section into the DOM
     document.body.appendChild(pricingSection);
+});
+
+// Ensure all assets are served correctly in deployment
+document.addEventListener('DOMContentLoaded', () => {
+    const basePath = window.location.origin;
+
+    // Update paths for assets if needed
+    const favicon = document.querySelector('link[rel="icon"]');
+    if (favicon) favicon.href = `${basePath}/favicon.ico`;
+
+    // Example: Update any other asset paths dynamically
+    // const someAsset = document.getElementById('someAsset');
+    // if (someAsset) someAsset.src = `${basePath}/path/to/asset.png`;
 });
 
 // Function: Toggle Scanning

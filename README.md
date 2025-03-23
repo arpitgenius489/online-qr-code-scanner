@@ -41,6 +41,21 @@ The **Online QR Code Scanner & Generator** is a lightweight, user-friendly tool 
 
 
 
+## 🚀 Deployment on Render
+
+### Steps to Deploy:
+1. Ensure you have a `server.js` file to serve the application.
+2. Push the project to a GitHub repository.
+3. Log in to [Render](https://render.com/) and create a new Web Service.
+4. Connect your GitHub repository to Render.
+5. Set the build command to `npm install`.
+6. Set the start command to `node server.js`.
+7. Deploy and test the application.
+
+#####
+
+
+
 ## ⚠️ Disclaimer
 
 This tool is provided "as-is" without any guarantees. While it is optimized for Google Chrome on Android and Windows, performance on other platforms may vary.
