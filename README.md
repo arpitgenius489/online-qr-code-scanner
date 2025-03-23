@@ -20,6 +20,15 @@ The **Online QR Code Scanner & Generator** is a lightweight, user-friendly tool 
 
 
 
+## 🛠️ Prerequisites
+
+- **Node.js**: Ensure Node.js (version 14 or higher) is installed on your system.
+- **Git**: Install Git to manage version control and push changes to GitHub.
+
+#####
+
+
+
 ## 🛠️ How It Works
 
 1. Open the tool in **Google Chrome** on Android or Windows.

@@ -16,7 +16,7 @@ const enableShortcuts = document.getElementById('enableShortcuts');
 let scanning = false;
 
 // Ensure all DOM elements are present
-if (!video || !scanBtn) {
+if (!video || !scanBtn || !cameraSource || !qrContent || !canvas || !ctx) {
     console.error('Required DOM elements are missing.');
     alert('An error occurred while loading the application. Please try again.');
     return;
