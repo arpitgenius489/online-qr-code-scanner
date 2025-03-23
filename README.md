@@ -1,6 +1,6 @@
 # Online QR Code Scanner & Generator
 
-The **Online QR Code Scanner & Generator** is a lightweight, user-friendly tool designed to scan and generate QR codes effortlessly. It is optimized to work seamlessly on **Google Chrome** for both **Android** and **Windows** platforms. For other browsers or platforms, functionality is not guaranteed.
+
 
 ---
 
