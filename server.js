@@ -4,12 +4,12 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, 'public')));
+// Serve static files from the root directory
+app.use(express.static(path.join(__dirname)));
 
-// Fallback route for handling 404 errors
+// Fallback route to serve index.html for all unmatched routes
 app.get('*', (req, res) => {
-  res.status(404).send('Page not found');
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Start the server
