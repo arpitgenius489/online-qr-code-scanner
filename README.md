@@ -4,7 +4,7 @@ The **Online QR Code Scanner & Generator** is a lightweight, user-friendly tool 
 
 ---
 
-## ✨ Features
+
 
 - **📷 QR Code Scanning**: Use your device's camera to scan QR codes and instantly view their content.
 - **🖨️ QR Code Generation**: Create QR codes for any text or URL with ease.
