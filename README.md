@@ -57,9 +57,10 @@ The **Online QR Code Scanner & Generator** is a lightweight, user-friendly tool 
 2. Push the project to a GitHub repository.
 3. Log in to [Render](https://render.com/) and create a new Web Service.
 4. Connect your GitHub repository to Render.
-5. Set the build command to `npm install`.
-6. Set the start command to `node server.js`.
-7. Deploy and test the application.
+5. **Install Gunicorn**: Add `gunicorn` to your `package.json` dependencies or install it using `npm install gunicorn`.
+6. Set the build command to `npm install`.
+7. Set the start command to `gunicorn server.js`.
+8. Deploy and test the application.
 
 #####
 
